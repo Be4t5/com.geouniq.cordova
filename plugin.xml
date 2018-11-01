@@ -23,8 +23,6 @@
         <config-file parent="/*" target="AndroidManifest.xml"/>
         <source-file src="src/android/GUCordovaPlugin.java" target-dir="src/com/geouniq/cordova/GUCordovaPlugin"/>
         <framework custom="true" src="src/android/GUCordovaPlugin.gradle" type="gradleReference"/>
-		<source-file src="src/android/libs/location.jar" target-dir="libs" />
-		<source-file src="src/android/libs/ads.jar" target-dir="libs" />
     </platform>
 
     <platform name="ios">
