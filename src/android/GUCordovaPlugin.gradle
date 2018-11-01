@@ -1,0 +1,7 @@
+repositories {
+    maven { url "https://dl.bintray.com/geouniq/com.geouniq.android" }
+}
+
+dependencies {
+    compile 'com.geouniq.android:sdk-library:2.1.4'
+}

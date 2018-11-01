@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.geouniq.cordova" version="0.1.2">
+    <name>GUCordovaPlugin</name>
+    <description>Cordova plugin for Geouniq SDK</description>
+    <keywords>geouniq,background geolocation</keywords>
+    <repo>https://gitlab.com/geouniq/cordova/GUCordovaPlugin.git</repo>
+    <issue>https://gitlab.com/geouniq/cordova/GUCordovaPlugin/issues</issue>
+    <license>Apache 2.0</license>
+
+    <js-module name="GUCordovaPlugin" src="www/GUCordovaPlugin.js">
+        <clobbers target="cordova.plugins.GUCordovaPlugin"/>
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="GUCordovaPlugin">
+                <param name="android-package" value="com.geouniq.cordova.GUCordovaPlugin"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"/>
+        <source-file src="src/android/GUCordovaPlugin.java" target-dir="src/com/geouniq/cordova/GUCordovaPlugin"/>
+        <framework custom="true" src="src/android/GUCordovaPlugin.gradle" type="gradleReference"/>
+    </platform>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="GUCordovaPlugin">
+                <param name="ios-package" value="GUCordovaPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/GUCordovaPlugin.m"/>
+    </platform>
+</plugin>

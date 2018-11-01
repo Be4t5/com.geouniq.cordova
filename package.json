@@ -1,0 +1,25 @@
+{
+  "name": "com.geouniq.cordova",
+  "version": "0.1.2",
+  "description": "Cordova plugin for Geouniq SDK",
+  "cordova": {
+    "id": "com.geouniq.cordova",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:geouniq/mobile/cordova/GUCordovaPlugin.git"
+  },
+  "keywords": [
+    "geouniq",
+    "background geolocation",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Geouniq",
+  "license": "Apache 2.0"
+}
