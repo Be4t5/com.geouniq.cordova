@@ -14,7 +14,7 @@ dependencies {
 		exclude group: 'com.google.android.gms', module: 'play-services-identity'
 		exclude group: 'com.google.android.gms', module: 'play-services-basement'
 		exclude group: 'com.google.android.gms', module: 'play-services-tasks'
-
+		exclude group: 'com.google.android.gms', module: 'play-services-places-placereport'
 
 	}
 }
