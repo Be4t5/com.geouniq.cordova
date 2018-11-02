@@ -3,5 +3,8 @@ repositories {
 }
 
 dependencies {
-    compile 'com.geouniq.android:sdk-library:2.1.4'
+    compile ('com.geouniq.android:sdk-library:2.1.4'){
+		exclude group: "com.android.support", name: "support-v4"
+		exclude group: "com.google.android.gms", name: "play-services-ads"
+	}
 }
