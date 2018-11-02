@@ -3,5 +3,5 @@ repositories {
 }
 
 dependencies {
-    
+    compile 'com.geouniq.android:sdk-library:2.1.4'
 }
