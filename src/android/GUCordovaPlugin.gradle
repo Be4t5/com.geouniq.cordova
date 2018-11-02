@@ -3,7 +3,7 @@ repositories {
 }
 
 dependencies {
-compile 'com.google.android.gms:play-services-location:15.0.1'
+compile 'com.google.android.gms:play-services-location:+'
     compile ('com.geouniq.android:sdk-library:2.1.4'){
 		exclude group: 'com.google.android.gms', module: 'play-services-ads'
 		exclude group: 'com.google.android.gms', module: 'play-services-base'
