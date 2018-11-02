@@ -5,11 +5,11 @@ repositories {
 dependencies {
 
     compile ('com.geouniq.android:sdk-library:2.1.4'){
-		exclude group: 'com.google.android.gms', module: 'play-services-ads', version: '15.0.1'
-		exclude group: 'com.google.android.gms', module: 'play-services-base', version: '15.0.1'
-		exclude group: 'com.google.android.gms', module: 'play-services-basement', version: '15.0.1'
-		exclude group: 'com.google.android.gms', module: 'play-services-tasks', version: '15.0.1'
-		exclude group: 'com.google.android.gms', module: 'play-services-places-placereport', version: '15.0.1'
+		exclude group: 'com.google.android.gms', module: 'play-services-ads'
+		exclude group: 'com.google.android.gms', module: 'play-services-base'
+		exclude group: 'com.google.android.gms', module: 'play-services-basement'
+		exclude group: 'com.google.android.gms', module: 'play-services-tasks'
+		exclude group: 'com.google.android.gms', module: 'play-services-places-placereport'
 
 	}
 }
