@@ -10,7 +10,7 @@ dependencies {
 	    compile "com.google.android.gms:play-services-auth:15.0.1"
     compile "com.google.android.gms:play-services-identity:15.0.1"
     compile ('com.geouniq.android:sdk-library:2.1.4'){
-		exclude group: 'com.google.android.gms', module: 'play-services-ads'
+		//exclude group: 'com.google.android.gms', module: 'play-services-ads'
 		//exclude group: 'com.google.android.gms', module: 'play-services-base'
 		//exclude group: 'com.google.android.gms', module: 'play-services-basement'
 		//exclude group: 'com.google.android.gms', module: 'play-services-tasks'
